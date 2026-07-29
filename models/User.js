@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
 
     thinkey: {
         type: BigInt,
-        required: true,
+        // required: true,
         index: true,
         unique: true
     },
@@ -43,4 +43,4 @@ const UserSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.Model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema)

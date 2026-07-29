@@ -9,6 +9,10 @@ async function register(data) {
         throw new Error("Username sudah digunakan")
     }
 
+    if (email) {
+        throw new Error("Email sudah terdaftar")
+    }
+
     return await userRepository.createUser(data)
 }
 
