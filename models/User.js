@@ -29,7 +29,8 @@ const UserSchema = new mongoose.Schema({
         type: BigInt,
         // required: true,
         index: true,
-        unique: true
+        unique: true,
+        sparse: true
     },
 
     password: {
